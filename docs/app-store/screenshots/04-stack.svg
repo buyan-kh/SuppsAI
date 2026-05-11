@@ -1,0 +1,26 @@
+<svg width="1290" height="2796" viewBox="0 0 1290 2796" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1290" height="2796" fill="#0A0F1F"/>
+<rect x="90" y="120" width="1110" height="2556" rx="90" fill="#111A2E" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="4"/>
+<rect x="140" y="250" width="990" height="430" rx="56" fill="url(#g)"/>
+<text x="190" y="360" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" fill="#1A120A">Stack Planner</text>
+<text x="190" y="480" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="800" fill="#0A0F1F">Morning / Evening</text>
+<text x="190" y="570" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#0A0F1F" opacity="0.72">Timing reminders</text>
+<rect x="140" y="760" width="990" height="360" rx="48" fill="#182340"/>
+<rect x="190" y="830" width="620" height="54" rx="27" fill="#FFFFFF" opacity="0.92"/>
+<rect x="190" y="925" width="820" height="38" rx="19" fill="#FFFFFF" opacity="0.55"/>
+<rect x="190" y="1000" width="720" height="38" rx="19" fill="#FFFFFF" opacity="0.35"/>
+<circle cx="1010" cy="890" r="72" fill="#40E6B8"/>
+<rect x="140" y="1190" width="990" height="360" rx="48" fill="#182340"/>
+<rect x="190" y="1260" width="500" height="54" rx="27" fill="#FFFFFF" opacity="0.92"/>
+<rect x="190" y="1355" width="760" height="38" rx="19" fill="#FFFFFF" opacity="0.55"/>
+<rect x="190" y="1430" width="650" height="38" rx="19" fill="#FFFFFF" opacity="0.35"/>
+<circle cx="1010" cy="1320" r="72" fill="#F25E29"/>
+<rect x="140" y="1620" width="990" height="700" rx="48" fill="#182340"/>
+<text x="190" y="1740" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" fill="#FFFFFF">Built for safer routines</text>
+<rect x="190" y="1820" width="850" height="44" rx="22" fill="#FFFFFF" opacity="0.55"/>
+<rect x="190" y="1910" width="790" height="44" rx="22" fill="#FFFFFF" opacity="0.40"/>
+<rect x="190" y="2000" width="880" height="44" rx="22" fill="#FFFFFF" opacity="0.30"/>
+<rect x="190" y="2140" width="360" height="86" rx="43" fill="#F25E29"/>
+<text x="235" y="2198" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#FFFFFF">Preview</text>
+<defs><linearGradient id="g" x1="140" y1="250" x2="1130" y2="680"><stop stop-color="#F25E29"/><stop offset="1" stop-color="#FFA83D"/></linearGradient></defs>
+</svg>
