@@ -7,4 +7,6 @@ struct ScanResult: Identifiable, Hashable {
     let ingredientHighlights: [String]
     let warnings: [String]
     let suggestedAlternatives: [Supplement]
+    let explanation: String
+    let analyzedAt: Date
 }

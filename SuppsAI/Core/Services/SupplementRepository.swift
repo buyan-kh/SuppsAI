@@ -55,7 +55,9 @@ struct MockSupplementRepository: SupplementRepository {
             riskScore: 68,
             ingredientHighlights: ["Creatine monohydrate", "Citrulline malate", "High-stim caffeine blend"],
             warnings: ["Caffeine amount is not fully disclosed", "Avoid late-day use if sleep is a goal"],
-            suggestedAlternatives: Array(supplements.filter { $0.category == .performance }.prefix(2))
+            suggestedAlternatives: Array(supplements.filter { $0.category == .performance }.prefix(2)),
+            explanation: "This pre-workout is a moderate-risk fit because its stimulant blend is not transparent.",
+            analyzedAt: Date()
         )
     }
 }
@@ -117,6 +119,20 @@ extension MockSupplementRepository {
             interactions: ["Anticoagulants and antiplatelet drugs"],
             tags: ["heart", "brain", "foundation"],
             isHotirghiniPick: false
+        ),
+        Supplement(
+            id: UUID(uuidString: "4423DA44-7EB8-4370-9C7E-5F2F4F04F0CC")!,
+            name: "Citrulline Malate",
+            category: .performance,
+            shortBenefit: "Training pump and endurance support",
+            summary: "A non-stimulant performance option often used before training for blood-flow and repeated-effort support.",
+            dosage: "6–8 g before training",
+            timing: "30–60 minutes pre-workout",
+            evidenceLevel: .moderate,
+            safetyNotes: ["Start lower if prone to GI discomfort", "Use caution with blood-pressure medication"],
+            interactions: ["Nitrates and blood-pressure medication"],
+            tags: ["pump", "training", "non-stim"],
+            isHotirghiniPick: true
         ),
         Supplement(
             id: UUID(uuidString: "77C67FE9-E0C8-4219-A6E5-132CB11EE68D")!,

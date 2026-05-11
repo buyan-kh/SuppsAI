@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4F5AA6E55A1D438EB063A8C9"
+               BlueprintIdentifier = "76F46D23BC6C46FE9B9186BA"
                BuildableName = "SuppsAI.app"
                BlueprintName = "SuppsAI"
                ReferencedContainer = "container:SuppsAI.xcodeproj">
@@ -41,7 +41,7 @@
       <BuildableProductRunnable runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4F5AA6E55A1D438EB063A8C9"
+            BlueprintIdentifier = "76F46D23BC6C46FE9B9186BA"
             BuildableName = "SuppsAI.app"
             BlueprintName = "SuppsAI"
             ReferencedContainer = "container:SuppsAI.xcodeproj">
@@ -57,7 +57,7 @@
       <BuildableProductRunnable runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4F5AA6E55A1D438EB063A8C9"
+            BlueprintIdentifier = "76F46D23BC6C46FE9B9186BA"
             BuildableName = "SuppsAI.app"
             BlueprintName = "SuppsAI"
             ReferencedContainer = "container:SuppsAI.xcodeproj">

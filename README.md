@@ -1,6 +1,6 @@
 # SuppsAI — HOTIRGHINI Version
 
-SuppsAI is a SwiftUI iOS app concept for supplement discovery, label scanning, and stack planning. The HOTIRGHINI version uses a high-contrast dark interface, orange energy accents, seeded mock data, and a modular MVVM codebase so the app opens immediately in Xcode previews without any backend.
+SuppsAI is a functional SwiftUI iOS prototype for supplement discovery, label analysis, and stack planning. The HOTIRGHINI version uses a high-contrast dark interface, orange energy accents, seeded mock data, and a modular MVVM codebase so the app opens immediately in Xcode previews without any backend.
 
 ## Setup
 
@@ -11,7 +11,7 @@ SuppsAI is a SwiftUI iOS app concept for supplement discovery, label scanning, a
 
 ## API key placeholders
 
-The current app ships with mock services for instant preview. Replace these placeholders before connecting production services:
+The current app ships with a fully offline mock analyzer for instant preview. Replace these placeholders before connecting production services:
 
 - `OPENAI_API_KEY` in `SuppsAI/Info.plist`: `YOUR_OPENAI_API_KEY_HERE`
 - `SUPPSAI_API_BASE_URL` in `SuppsAI/Info.plist`: `https://api.example.com`
@@ -43,8 +43,22 @@ SuppsAI/
 
 - Views render state and user interactions only.
 - View models own screen state and formatting logic.
-- Services are protocol-driven, making the mock repository easy to replace with API-backed implementations.
+- `AppState` carries the end-to-end user journey from onboarding through scans and stack edits.
+- Services are protocol-driven, making the mock repository and offline label analyzer easy to replace with API-backed implementations.
 - Seed data lives in `MockSupplementRepository` so previews and simulator runs work instantly.
+
+### Functional end-to-end prototype scope
+
+This version is functional as an offline prototype:
+
+1. Complete onboarding by selecting a goal, diet, and caffeine sensitivity.
+2. Review HOTIRGHINI dashboard recommendations generated from seeded evidence data.
+3. Paste or edit supplement label text in the Scan tab.
+4. Run the offline label analyzer to produce a risk score, warnings, highlights, and cleaner alternatives.
+5. Add alternatives to the stack and manage morning/evening timing in Stack Planner.
+6. Review profile, stack count, scan count, and safety disclaimer.
+
+Production camera OCR, live medical-grade validation, authentication, persistence, and paid API calls are intentionally behind service protocols and API placeholders.
 
 ## SwiftUI previews
 

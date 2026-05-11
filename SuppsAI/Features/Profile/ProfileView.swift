@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ProfileView: View {
     @StateObject var viewModel: ProfileViewModel
+    @ObservedObject var appState: AppState
 
     var body: some View {
         NavigationStack {
@@ -14,7 +15,7 @@ struct ProfileView: View {
                         Text(viewModel.profile.name)
                             .font(.largeTitle.bold())
                             .foregroundStyle(HotirghiniTheme.textPrimary)
-                        Text(viewModel.profile.goal.rawValue)
+                        Text(appState.profile.goal.rawValue)
                             .foregroundStyle(HotirghiniTheme.textSecondary)
                     }
                     profileCard
@@ -30,9 +31,10 @@ struct ProfileView: View {
     private var profileCard: some View {
         HotirghiniCard {
             VStack(alignment: .leading, spacing: 14) {
-                settingRow("Diet", value: viewModel.profile.dietaryPreference.rawValue, icon: "fork.knife")
-                settingRow("Caffeine", value: viewModel.profile.caffeineSensitivity.rawValue, icon: "cup.and.saucer.fill")
-                settingRow("Stack items", value: "\(viewModel.profile.currentStack.count)", icon: "pills.fill")
+                settingRow("Diet", value: appState.profile.dietaryPreference.rawValue, icon: "fork.knife")
+                settingRow("Caffeine", value: appState.profile.caffeineSensitivity.rawValue, icon: "cup.and.saucer.fill")
+                settingRow("Stack items", value: "\(appState.stack.count)", icon: "pills.fill")
+                settingRow("Scans", value: "\(appState.scanHistory.count)", icon: "viewfinder")
             }
         }
     }
@@ -56,5 +58,6 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ProfileView(viewModel: ProfileViewModel(repository: MockSupplementRepository()))
+    let appState = AppState(repository: MockSupplementRepository(), hasCompletedOnboarding: true)
+    ProfileView(viewModel: ProfileViewModel(appState: appState), appState: appState)
 }
